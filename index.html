@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satory Property - Luxury Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'barlow': ['Barlow', 'sans-serif'],
+                        'rubik': ['Rubik', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#0F172A',
+                        'accent': '#F59E0B',
+                        'dark-bg': '#1E293B',
+                        'gray-text': '#6B7280',
+                        'light-gray': '#E5E7EB',
+                        'gradient-accent': '#d97706'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-rubik">
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-28">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="/" class="block">
+                        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/65536402-98a6-4df6-08e4-29533d9ec200/publicContain" alt="Satory Property" class="h-28 py-2" data-logo data-media>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="/listings" class="text-primary font-medium hover:text-accent transition-colors duration-300">Listings</a>
+                    <a href="/agents" class="text-primary font-medium hover:text-accent transition-colors duration-300">Agents</a>
+                    <a href="/about" class="text-primary font-medium hover:text-accent transition-colors duration-300">About Us</a>
+                    <a href="/contact" class="text-primary font-medium hover:text-accent transition-colors duration-300">Contact</a>
+                    <a href="/book-consultation" class="bg-accent text-primary px-6 py-3 rounded-lg font-medium shadow-md hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">Book Your Free Consultation</a>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="lg:hidden text-2xl text-primary" data-landingsite-mobile-menu-toggle>
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="hidden lg:hidden pb-6 space-y-4" data-landingsite-mobile-menu>
+                <a href="/listings" class="block py-2 text-primary font-medium hover:text-accent transition-colors duration-300">Listings</a>
+                <a href="/agents" class="block py-2 text-primary font-medium hover:text-accent transition-colors duration-300">Agents</a>
+                <a href="/about" class="block py-2 text-primary font-medium hover:text-accent transition-colors duration-300">About Us</a>
+                <a href="/contact" class="block py-2 text-primary font-medium hover:text-accent transition-colors duration-300">Contact</a>
+                <a href="/book-consultation" class="block w-full text-center bg-accent text-primary px-6 py-3 rounded-lg font-medium shadow-md hover:bg-primary hover:text-white transition-all duration-300">Book Your Free Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen relative overflow-hidden">
+        <!-- Background Layer -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" alt="Luxury modern house with swimming pool at dusk" class="w-full h-full object-cover" data-media>
+            <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+        </div>
+
+        <!-- Content Layer -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="max-w-3xl">
+                <!-- Badge -->
+                <div class="inline-flex items-center bg-accent/20 backdrop-blur-sm border border-accent/40 rounded-full px-4 py-2 mb-6">
+                    <i class="fas fa-star text-accent mr-2"></i>
+                    <span class="text-white text-sm font-medium">Premium Real Estate Solutions</span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="font-barlow text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6">
+                    Find Your Dream Sanctuary with <span class="text-accent">Satory</span>
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-lg sm:text-xl text-gray-200 mb-8">
+                    Discover exclusive properties tailored for the modern lifestyle. Expert guidance, verified listings, and seamless service—from search to closing.
+                </p>
+
+                <!-- Search Bar -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 shadow-2xl mb-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                        <div class="bg-white rounded-lg px-4 py-3 flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent mr-3"></i>
+                            <input type="text" placeholder="Location" class="flex-1 outline-none">
+                        </div>
+                        <div class="bg-white rounded-lg px-4 py-3 flex items-center">
+                            <i class="fas fa-dollar-sign text-accent mr-3"></i>
+                            <input type="text" placeholder="Price Range" class="flex-1 outline-none">
+                        </div>
+                        <div class="bg-white rounded-lg px-4 py-3 flex items-center">
+                            <i class="fas fa-home text-accent mr-3"></i>
+                            <select class="flex-1 outline-none">
+                                <option>Property Type</option>
+                                <option>House</option>
+                                <option>Apartment</option>
+                                <option>Villa</option>
+                                <option>Condo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="w-full bg-accent text-primary py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-all duration-300">
+                        <i class="fas fa-search mr-3"></i>Search Properties
+                    </button>
+                </div>
+
+                <!-- Trust Signal -->
+                <div class="flex items-center text-white/80 text-sm">
+                    <i class="fas fa-check-circle text-accent mr-2"></i>
+                    <span>Join 5,000+ satisfied homeowners who found their dream property with us</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Stats Card -->
+        <div class="hidden lg:block absolute bottom-10 right-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:scale-105 transition-transform duration-300">
+            <div class="text-center">
+                <i class="fas fa-home text-accent text-2xl mb-2"></i>
+                <div class="text-white font-bold text-2xl">2,500+</div>
+                <div class="text-white/80 text-sm">Properties Listed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED LISTINGS -->
+    <section class="bg-gradient-to-b from-white to-gray-50 py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <div class="text-accent uppercase text-sm tracking-wide font-medium mb-4">Featured Properties</div>
+                <h2 class="font-barlow text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6">
+                    Exclusive Listings Curated For You
+                </h2>
+                <p class="text-gray-text text-lg max-w-2xl mx-auto">
+                    Handpicked luxury properties that redefine modern living
+                </p>
+            </div>
+
+            <!-- Property Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Property 1 -->
+                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Luxury Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-media>
+                        <div class="absolute top-4 right-4 bg-accent text-primary px-4 py-2 rounded-full font-bold text-sm">Featured</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                            <button class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-primary transition-colors duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="text-2xl font-bold text-accent">$1,850,000</div>
+                            <div class="text-gray-text text-sm">For Sale</div>
+                        </div>
+                        <h3 class="font-semibold text-lg text-primary mb-2">Modern Luxury Villa</h3>
+                        <div class="flex items-center text-gray-text text-sm mb-4">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            1234 Beverly Hills, Los Angeles, CA
+                        </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bed text-accent mr-1"></i>
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bath text-accent mr-1"></i>
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-ruler-combined text-accent mr-1"></i>
+                                <span>3,200 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Oceanfront Paradise" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-media>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                            <button class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-primary transition-colors duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="text-2xl font-bold text-accent">$2,950,000</div>
+                            <div class="text-gray-text text-sm">For Sale</div>
+                        </div>
+                        <h3 class="font-semibold text-lg text-primary mb-2">Oceanfront Paradise</h3>
+                        <div class="flex items-center text-gray-text text-sm mb-4">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            5678 Pacific Coast Highway, Malibu, CA
+                        </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bed text-accent mr-1"></i>
+                                <span>5 Beds</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bath text-accent mr-1"></i>
+                                <span>4 Baths</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-ruler-combined text-accent mr-1"></i>
+                                <span>4,800 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Contemporary Family Home" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-media>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                            <button class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-primary transition-colors duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="text-2xl font-bold text-accent">$1,425,000</div>
+                            <div class="text-gray-text text-sm">For Sale</div>
+                        </div>
+                        <h3 class="font-semibold text-lg text-primary mb-2">Contemporary Family Home</h3>
+                        <div class="flex items-center text-gray-text text-sm mb-4">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            9012 Sunset Boulevard, West Hollywood, CA
+                        </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bed text-accent mr-1"></i>
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bath text-accent mr-1"></i>
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-ruler-combined text-accent mr-1"></i>
+                                <span>2,900 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant Pool Estate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-media>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                            <button class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-primary transition-colors duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="text-2xl font-bold text-accent">$1,650,000</div>
+                            <div class="text-gray-text text-sm">For Sale</div>
+                        </div>
+                        <h3 class="font-semibold text-lg text-primary mb-2">Elegant Pool Estate</h3>
+                        <div class="flex items-center text-gray-text text-sm mb-4">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            3456 Mulholland Drive, Beverly Hills, CA
+                        </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bed text-accent mr-1"></i>
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bath text-accent mr-1"></i>
+                                <span>4 Baths</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-ruler-combined text-accent mr-1"></i>
+                                <span>3,600 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Minimalist Luxury Condo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-media>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                            <button class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-primary transition-colors duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="text-2xl font-bold text-accent">$995,000</div>
+                            <div class="text-gray-text text-sm">For Sale</div>
+                        </div>
+                        <h3 class="font-semibold text-lg text-primary mb-2">Minimalist Luxury Condo</h3>
+                        <div class="flex items-center text-gray-text text-sm mb-4">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            7890 Wilshire Boulevard, Los Angeles, CA
+                        </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bed text-accent mr-1"></i>
+                                <span>3 Beds</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bath text-accent mr-1"></i>
+                                <span>2 Baths</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-ruler-combined text-accent mr-1"></i>
+                                <span>2,100 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Urban Loft Penthouse" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-media>
+                        <div class="absolute top-4 right-4 bg-primary text-white px-4 py-2 rounded-full font-bold text-sm">New</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                            <button class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-primary transition-colors duration-300">View Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="text-2xl font-bold text-accent">$1,150,000</div>
+                            <div class="text-gray-text text-sm">For Sale</div>
+                        </div>
+                        <h3 class="font-semibold text-lg text-primary mb-2">Urban Loft Penthouse</h3>
+                        <div class="flex items-center text-gray-text text-sm mb-4">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            4567 Broadway Street, Downtown LA, CA
+                        </div>
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bed text-accent mr-1"></i>
+                                <span>3 Beds</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bath text-accent mr-1"></i>
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-ruler-combined text-accent mr-1"></i>
+                                <span>2,500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center mt-12">
+                <a href="/listings" class="inline-flex items-center bg-accent text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-all duration-300">
+                    View All Properties
+                    <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE SATORY -->
+    <section class="bg-primary py-20 lg:py-32 relative overflow-hidden">
+        <!-- Decorative Background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute w-72 h-72 bg-accent rounded-full blur-3xl top-20 left-10"></div>
+            <div class="absolute w-96 h-96 bg-accent rounded-full blur-3xl bottom-20 right-10"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <div class="text-accent uppercase text-sm tracking-wide font-medium mb-4">Our Promise</div>
+                <h2 class="font-barlow text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                    Why Choose Satory Property?
+                </h2>
+                <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+                    We combine cutting-edge technology with personalized service to deliver an unmatched real estate experience
+                </p>
+            </div>
+
+            <!-- Benefits Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-20">
+                <!-- Benefit 1 -->
+                <div class="text-center group">
+                    <div class="relative inline-flex mb-6">
+                        <div class="absolute w-20 h-20 bg-accent rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                        <div class="relative bg-gradient-to-br from-accent to-gradient-accent p-6 rounded-2xl shadow-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <i class="fas fa-shield-check text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-barlow text-2xl font-bold text-white mb-4">Verified Listings</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Every property is thoroughly vetted and verified. No fake listings, no surprises—just authentic opportunities for your dream home.
+                    </p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="text-center group">
+                    <div class="relative inline-flex mb-6">
+                        <div class="absolute w-20 h-20 bg-accent rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                        <div class="relative bg-gradient-to-br from-accent to-gradient-accent p-6 rounded-2xl shadow-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <i class="fas fa-user-tie text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-barlow text-2xl font-bold text-white mb-4">Expert Guidance</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Our certified agents bring decades of combined experience. From first viewing to final closing, we're with you every step of the way.
+                    </p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="text-center group">
+                    <div class="relative inline-flex mb-6">
+                        <div class="absolute w-20 h-20 bg-accent rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                        <div class="relative bg-gradient-to-br from-accent to-gradient-accent p-6 rounded-2xl shadow-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <i class="fas fa-file-contract text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-barlow text-2xl font-bold text-white mb-4">Seamless Paperwork</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        We handle the complex legal and financial documentation. Our streamlined process makes buying or selling stress-free and efficient.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center border-r border-white/20 last:border-r-0">
+                    <div class="text-accent font-barlow text-4xl lg:text-5xl font-bold mb-2">2,500+</div>
+                    <div class="text-gray-300 text-sm uppercase tracking-wide">Properties Sold</div>
+                </div>
+                <div class="text-center border-r border-white/20 last:border-r-0">
+                    <div class="text-accent font-barlow text-4xl lg:text-5xl font-bold mb-2">5,000+</div>
+                    <div class="text-gray-300 text-sm uppercase tracking-wide">Happy Clients</div>
+                </div>
+                <div class="text-center border-r border-white/20 last:border-r-0">
+                    <div class="text-accent font-barlow text-4xl lg:text-5xl font-bold mb-2">15+</div>
+                    <div class="text-gray-300 text-sm uppercase tracking-wide">Years Experience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-accent font-barlow text-4xl lg:text-5xl font-bold mb-2">98%</div>
+                    <div class="text-gray-300 text-sm uppercase tracking-wide">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-20 lg:py-32 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 100 100">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <circle cx="5" cy="5" r="1" fill="currentColor"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-primary to-dark-bg rounded-3xl p-8 lg:p-16 shadow-2xl relative overflow-hidden">
+                <!-- Decorative Elements -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-accent blur-3xl opacity-20"></div>
+                <div class="absolute bottom-0 left-0 w-80 h-80 bg-accent blur-3xl opacity-20"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+                    <!-- Left Column -->
+                    <div>
+                        <div class="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                            Ready to Get Started?
+                        </div>
+                        <h2 class="font-barlow text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                            Let's Find Your Perfect Property Together
+                        </h2>
+                        <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                            Book a free consultation with one of our expert agents. No pressure, no obligations—just honest advice tailored to your needs.
+                        </p>
+
+                        <!-- Benefits List -->
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span class="text-gray-200">Personalized property recommendations based on your criteria</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span class="text-gray-200">Market insights and pricing analysis from our experts</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span class="text-gray-200">Complete guidance through the entire buying process</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                            <a href="/book-consultation" class="bg-accent text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300">
+                                <i class="fas fa-calendar-check mr-3"></i>Book Free Consultation
+                            </a>
+                            <a href="/contact" class="bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300">
+                                <i class="fas fa-phone mr-3"></i>Contact Us
+                            </a>
+                        </div>
+
+                        <!-- Trust Signal -->
+                        <div class="flex items-center text-gray-400 text-sm">
+                            <i class="fas fa-lock mr-2"></i>
+                            <span>Your information is secure. We respect your privacy.</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="hidden lg:block">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-500">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Real estate consultation" class="w-full h-96 object-cover" data-media>
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
+                            
+                            <!-- Floating Card -->
+                            <div class="absolute -bottom-6 -left-6 bg-white rounded-xl p-6 shadow-2xl max-w-xs">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-star text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-primary font-bold text-2xl">4.9/5</div>
+                                        <div class="text-gray-text text-sm">Client Rating</div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-text text-sm italic">"Best real estate experience ever!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white pt-20 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Main Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Column 1 - Company Info -->
+                <div class="lg:col-span-1">
+                    <a href="/" class="block mb-6">
+                        <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/65536402-98a6-4df6-08e4-29533d9ec200/publicContain" alt="Satory Property" class="h-24" data-logo data-media>
+                    </a>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Your trusted partner in finding the perfect property. Luxury, integrity, and expertise in every transaction.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2 - Quick Links -->
+                <div>
+                    <h3 class="font-barlow text-lg font-bold mb-6 text-accent">Quick Links</h3>
+                    <div class="space-y-3">
+                        <a href="/" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>Home
+                        </a>
+                        <a href="/listings" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>Listings
+                        </a>
+                        <a href="/agents" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>Agents
+                        </a>
+                        <a href="/about" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>About Us
+                        </a>
+                        <a href="/contact" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>Contact
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 3 - Services -->
+                <div>
+                    <h3 class="font-barlow text-lg font-bold mb-6 text-accent">Services</h3>
+                    <div class="space-y-3">
+                        <a href="/book-consultation" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>Free Consultation
+                        </a>
+                        <a href="/listings" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>Property Search
+                        </a>
+                        <a href="#" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>Property Valuation
+                        </a>
+                        <a href="#" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>Investment Advice
+                        </a>
+                        <a href="#" class="flex items-center text-gray-300 hover:text-accent transition-colors duration-300">
+                            <i class="fas fa-chevron-right text-xs mr-2"></i>Mortgage Assistance
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 4 - Contact Info -->
+                <div>
+                    <h3 class="font-barlow text-lg font-bold mb-6 text-accent">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-300">123 Luxury Avenue, Beverly Hills, CA 90210</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-accent mt-1 mr-3"></i>
+                            <a href="tel:+15551234567" class="text-gray-300 hover:text-accent transition-colors duration-300">+1 (555) 123-4567</a>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-accent mt-1 mr-3"></i>
+                            <a href="mailto:info@satoryproperty.com" class="text-gray-300 hover:text-accent transition-colors duration-300">info@satoryproperty.com</a>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-300">Mon - Fri: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2026 Satory Property. All rights reserved.
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-accent text-sm transition-colors duration-300">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('[data-landingsite-mobile-menu-toggle]');
+            const mobileMenu = document.querySelector('[data-landingsite-mobile-menu]');
+            
+            if (mobileMenuToggle && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
